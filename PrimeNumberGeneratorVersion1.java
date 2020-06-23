@@ -1,7 +1,3 @@
-//rename to your package name
-
-package ps;
-
 import java.util.Scanner;
 
 public class PrimeNumberGeneratorVersion1 {
