@@ -7,7 +7,10 @@ public class PrimeNumberGeneratorVersion1 {
 		Scanner sc = new Scanner(System.in);
 		System.out.print("Enter integer number up to find prime, e.g. 100 : ");
 		
+		
 		int total = sc.nextInt(); //input
+		long startTime = System.nanoTime(); //start time
+
 		String listOfPrimeNumbers = ""; //store found prime numbers as a String
 		
 		for(int i = 1; i <= total; i++) { //start with 1 to total
@@ -24,6 +27,8 @@ public class PrimeNumberGeneratorVersion1 {
 			}
 		}
 		System.out.println("Prime number from 1 to " + total + " are : " + listOfPrimeNumbers + "\n");
+		long stopTime = System.nanoTime(); //end time
+		System.out.println("\nExecution time : " + (stopTime - startTime)/100000 + " milli secs");
 		System.exit(0);
 	}
 }
