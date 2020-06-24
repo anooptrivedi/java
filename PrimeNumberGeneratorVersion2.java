@@ -8,8 +8,9 @@ public class PrimeNumberGeneratorVersion2 {
 		System.out.print("Enter integer number up to find prime, e.g. 100 : ");
 		
 		int total = sc.nextInt(); //input
+
+		long startTime = System.nanoTime(); //start time
 		String listOfPrimeNumbers = ""; //store found prime numbers as a String
-		
 		for(int i = 2; i <= total; i++) { //start with 2 to total
 			
 			boolean isPrime = true;
@@ -22,9 +23,10 @@ public class PrimeNumberGeneratorVersion2 {
 			if(isPrime) {
 				listOfPrimeNumbers = listOfPrimeNumbers + i + " ";
 			}
-			
 		}
 		System.out.println("Prime number from 1 to " + total + " are : " + listOfPrimeNumbers + "\n");
+		long stopTime = System.nanoTime(); //end time
+		System.out.println("\nExecution time : " + (stopTime - startTime)/100000 + " milli secs");
 		System.exit(0);
 	}
 }
