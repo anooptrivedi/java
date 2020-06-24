@@ -6,13 +6,17 @@ public class PrimeNumberGeneratorVersion3 {
 		
 		Scanner sc = new Scanner(System.in);
 		System.out.print("Enter integer number up to find prime, e.g. 100 : ");
+		
 		int max = sc.nextInt(); //input
 
+		long startTime = System.nanoTime(); //start time
 		for(int i =2; i < max; i++) {
 			if(isPrime(i)) {
 				System.out.print(i + " ");
-			}
+			}	
 		}
+		long stopTime = System.nanoTime(); //end time
+		System.out.println("\nExecution time : " + (stopTime - startTime)/100000 + " milli secs");
 	}
 	
 	// iterate only over odd numbers, because all multiples of 2, except 2 is composite
