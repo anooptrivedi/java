@@ -1,5 +1,3 @@
-package ps;
-
 import java.util.Random;
 
 // Most Basic Sort, using swap technique
