@@ -27,10 +27,10 @@ public class BubbleSort {
 			flag = false; //waiting for swap
 			for(int i=0; i < array.length-1;i++) {
 				if(array[i] > array[i + 1]) { //sort in ascending order
-					temp = array[i];
-					array[i] = array[i+1];
-					array[i+1] = temp;
-					flag = true;
+					temp = array[i]; //store in temp
+					array[i] = array[i+1]; //swap step 1
+					array[i+1] = temp; //swap step 2
+					flag = true; //swap complete
 				}
 			}
 		}
