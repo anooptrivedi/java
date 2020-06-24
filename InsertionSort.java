@@ -1,5 +1,3 @@
-package ps;
-
 import java.util.Random;
 
 // inefficient algorithm
