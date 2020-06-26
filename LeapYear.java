@@ -29,8 +29,6 @@ public class LeapYear {
 				else {
 					leap = true; // divisible by 4 but not 100
 				}
-		
-				
 			}
 			if(leap) {
 				System.out.println("It is a leap year");
