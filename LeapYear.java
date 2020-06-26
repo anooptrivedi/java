@@ -1,5 +1,3 @@
-package ps;
-
 import java.util.Scanner;
 
 // if a year is divisible 4 and not by 100, it is a leap year
